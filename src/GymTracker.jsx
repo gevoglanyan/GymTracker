@@ -92,6 +92,15 @@ const DEFAULT_SCHEDULE = {
   Sunday: "Push Day 2",
 };
 
+const MOBILE_LABELS = {
+  "Pull Day 1": "PULL",
+  "Pull Day 2": "PULL",
+  "Push Day 1": "PUSH",
+  "Push Day 2": "PUSH",
+  "Legs": "LEGS",
+  "Rest": "REST",
+};
+
 const DEFAULT_WORKOUTS = {
   "Pull Day 1": [
     { name: "Pull-ups", sets: "3", reps: "10", weight: "" },
@@ -522,13 +531,25 @@ export default function GymTracker() {
                         }}
                       >
                         <div className="text-white font-bold text-base mb-1">{day}</div>
+
+                        <div className="flex sm:hidden gap-1 mt-1">
+                          {hasCompletedWorkout && (
+                            <span className="w-2 h-2 bg-green-400 rounded-full" />
+                          )}
+                          {!hasCompletedWorkout && !isRestDay && (
+                            <span className="w-2 h-2 bg-cyan-400 rounded-full" />
+                          )}
+                          {isRestDay && (
+                            <span className="w-2 h-2 bg-purple-400 rounded-full" />
+                          )}
+                        </div>
                         
-                        <div className={`text-xs leading-tight truncate font-medium ${
+                        <div className={`hidden sm:block text-xs leading-tight truncate font-medium ${
                           isRestDay ? "text-slate-300" : "text-white"
                         }`}>
                           {scheduledWorkout}
                         </div>
-                        
+
                         {hasCompletedWorkout && (
                           <div className="absolute bottom-1 right-1">
                             <div className="bg-green-400 text-green-900 text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shadow-lg">
