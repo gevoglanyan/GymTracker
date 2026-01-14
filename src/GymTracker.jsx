@@ -454,7 +454,7 @@ export default function GymTracker() {
 
             <div className="bg-white/10 rounded-2xl p-6 border border-white/20 shadow-xl">
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold text-white flex items-center gap-2">
+                <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-2 whitespace-nowrap">
                   <Calendar className="w-6 h-6 text-purple-400" />
                   {currentMonth.toLocaleDateString("en-US", { month: "long", year: "numeric" })}
                 </h2>
