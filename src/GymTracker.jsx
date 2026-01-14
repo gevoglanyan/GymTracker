@@ -525,12 +525,12 @@ export default function GymTracker() {
                     days.push(
                       <div
                         key={day}
-                        className={`aspect-square p-2 rounded-lg relative ${bgColor} ${borderColor} border hover:brightness-110 transition-all cursor-pointer overflow-hidden`}
+                        className={`aspect-square p-2 flex flex-col justify-start rounded-lg relative ${bgColor} ${borderColor} border hover:brightness-110 transition-all cursor-pointer overflow-hidden`}
                         onClick={() => {
                           setExpandedDays(prev => ({ ...prev, [date.toISOString()]: !prev[date.toISOString()] }));
                         }}
                       >
-                        <div className="text-white font-bold text-base mb-1">{day}</div>
+                        <div className="text-white font-bold text-base leading-none mb-0.5">{day}</div>
 
                         <div className="flex sm:hidden gap-1 mt-1">
                           {hasCompletedWorkout && (
