@@ -1,1 +1,3 @@
-# GymTracker
+### Gym Tracker 
+
+## created by Harry Gevoglanyan
