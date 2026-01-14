@@ -335,12 +335,12 @@ export default function GymTracker() {
             <div className="flex items-center gap-3">
               <Dumbbell className="w-8 h-8 text-purple-400" />
               <div>
-                <h1 className="text-3xl font-bold text-white">Gym Tracker Pro</h1>
+                <h1 className="text-3xl font-bold text-white">Gym Tracker</h1>
                 <a 
                   href="https://gevoglanyan.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-s text-blue-300 hover:text-purple-200 transition-colors"
+                  className="text-s text-purple-300 hover:text-purple-200 transition-colors"
                 >
                   Created by Harry Gevoglanyan
                 </a>
