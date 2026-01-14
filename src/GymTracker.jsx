@@ -500,17 +500,17 @@ export default function GymTracker() {
                     let borderColor = "border-white/10";
                     
                     if (isToday) {
-                      bgColor = "bg-purple-600";
-                      borderColor = "border-purple-400 border-2";
+                      bgColor = "bg-red-600";
+                      borderColor = "border-red-400 border-2";
                     } else if (hasCompletedWorkout) {
                       bgColor = "bg-green-600/40";
                       borderColor = "border-green-400";
                     } else if (isRestDay) {
-                      bgColor = "bg-slate-700/50";
-                      borderColor = "border-slate-600";
+                      bgColor = "bg-cyan-700/50";
+                      borderColor = "border-cyan-600";
                     } else {
-                      bgColor = "bg-blue-600/30";
-                      borderColor = "border-blue-400/50";
+                      bgColor = "bg-purple-600/30";
+                      borderColor = "border-purple-400/50";
                     }
                     
                     days.push(
