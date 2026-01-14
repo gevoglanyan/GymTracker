@@ -506,11 +506,11 @@ export default function GymTracker() {
                       bgColor = "bg-green-600/40";
                       borderColor = "border-green-400";
                     } else if (isRestDay) {
-                      bgColor = "bg-cyan-700/50";
-                      borderColor = "border-cyan-600";
+                      bgColor = "bg-purple-700/50";
+                      borderColor = "border-purple-600";
                     } else {
-                      bgColor = "bg-purple-600/30";
-                      borderColor = "border-purple-400/50";
+                      bgColor = "bg-cyan-600/30";
+                      borderColor = "border-cyan-400/50";
                     }
                     
                     days.push(
@@ -584,7 +584,7 @@ export default function GymTracker() {
 
               <div className="mt-6 grid grid-cols-2 sm:flex sm:flex-wrap gap-3 justify-center text-sm">
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-purple-600 rounded border-2 border-purple-400"></div>
+                  <div className="w-5 h-5 bg-red-600 rounded border-2 border-red-400"></div>
                   <span className="text-white font-medium">Today</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -592,7 +592,7 @@ export default function GymTracker() {
                   <span className="text-white font-medium">Workout Day</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-slate-700/50 rounded border border-slate-600"></div>
+                  <div className="w-5 h-5 bg-purple-700/50 rounded border border-purple-600"></div>
                   <span className="text-white font-medium">Rest Day</span>
                 </div>
                 <div className="flex items-center gap-2">
