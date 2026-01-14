@@ -83,17 +83,17 @@ const COMMON_EXERCISES = {
 };
 
 const DEFAULT_SCHEDULE = {
-  Monday: "Pull 1",
+  Monday: "Pull Day 1",
   Tuesday: "Rest",
-  Wednesday: "Push 1",
+  Wednesday: "Push Day 1",
   Thursday: "Rest",
-  Friday: "Pull 2",
+  Friday: "Pull Day 2",
   Saturday: "Legs",
-  Sunday: "Push 2",
+  Sunday: "Push Day 2",
 };
 
 const DEFAULT_WORKOUTS = {
-  "Pull 1": [
+  "Pull Day 1": [
     { name: "Pull-ups", sets: "3", reps: "10", weight: "" },
     { name: "Barbell Row", sets: "4", reps: "8", weight: "135" },
     { name: "Lat Pulldown", sets: "3", reps: "12", weight: "100" },
@@ -101,7 +101,7 @@ const DEFAULT_WORKOUTS = {
     { name: "Bicep Curls", sets: "3", reps: "12", weight: "30" },
     { name: "Hammer Curls", sets: "3", reps: "12", weight: "30" },
   ],
-  "Pull 2": [
+  "Pull Day 2": [
     { name: "Deadlift", sets: "4", reps: "6", weight: "225" },
     { name: "Seated Cable Row", sets: "4", reps: "10", weight: "120" },
     { name: "Face Pulls", sets: "3", reps: "15", weight: "40" },
@@ -109,7 +109,7 @@ const DEFAULT_WORKOUTS = {
     { name: "Preacher Curls", sets: "3", reps: "12", weight: "30" },
     { name: "Concentration Curls", sets: "3", reps: "12", weight: "25" },
   ],
-  "Push 1": [
+  "Push Day 1": [
     { name: "Bench Press", sets: "4", reps: "8", weight: "185" },
     { name: "Incline Bench Press", sets: "3", reps: "10", weight: "135" },
     { name: "Dumbbell Flyes", sets: "3", reps: "12", weight: "35" },
@@ -117,7 +117,7 @@ const DEFAULT_WORKOUTS = {
     { name: "Lateral Raises", sets: "3", reps: "15", weight: "20" },
     { name: "Tricep Pushdown", sets: "3", reps: "12", weight: "60" },
   ],
-  "Push 2": [
+  "Push Day 2": [
     { name: "Incline Dumbbell Press", sets: "4", reps: "10", weight: "70" },
     { name: "Dips", sets: "3", reps: "12", weight: "" },
     { name: "Cable Crossover", sets: "3", reps: "15", weight: "30" },
