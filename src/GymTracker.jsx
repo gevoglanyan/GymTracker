@@ -340,7 +340,7 @@ export default function GymTracker() {
                   href="https://gevoglanyan.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-s text-purple-300 hover:text-purple-200 transition-colors"
+                  className="text-xs text-purple-300 hover:text-purple-200 transition-colors"
                 >
                   Created by Harry Gevoglanyan
                 </a>
